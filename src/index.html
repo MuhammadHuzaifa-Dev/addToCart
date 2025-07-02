@@ -6,31 +6,31 @@
     <link href="./output.css" rel="stylesheet" />
     <title>addToCart</title>
   </head>
-  <body
-    class="bg-gray-900 flex flex-col justify-center items-center min-h-screen p-0 m-0"
-  >
-    <div
-      class="bg-gray-800 p-5 flex flex-col min-w-[350px] rounded-xl border border-gray-700"
-    >
-      <h2 class="text-white text-4xl">Products</h2>
-      <div id="product-list"></div>
-      <h3 class="mt-2 text-2xl text-white">shopping Cart</h3>
+  <body class="bg-gray-900 flex flex-col justify-center items-center min-h-screen px-4 py-6 scroll-auto">
+    
+    <div class="w-full max-w-sm bg-gray-800 p-4 sm:p-6 rounded-xl border border-gray-700 shadow-md">
+      <h2 class="text-white text-2xl sm:text-3xl font-semibold mb-4">Products</h2>
+      <div id="product-list" class="space-y-2"></div>
+
+      <h3 class="text-xl sm:text-2xl text-white mt-6 mb-2">Shopping Cart</h3>
       <div id="cart-items">
-        <p id="empty-cart" class="text-white mt-2">Your cart is empty</p>
+        <p id="empty-cart" class="text-white">Your cart is empty</p>
       </div>
-      <div id="cart-total" class="flex flex-col self-end mt-2 hidden ">
-        <p class="text-white">Total: <span id="total-price">Rs 0.00</span></p>
+
+      <div id="cart-total" class="flex flex-col self-end mt-4 hidden">
+        <p class="text-white text-base">Total: <span id="total-price">Rs 0.00</span></p>
         <button id="checkout-btn"
-          class="bg-purple-900 text-white rounded-md py-3  border border-purple-700 hover:bg-purple-900"
-        >
+          class="mt-2 bg-purple-800 text-white rounded-md py-2 px-4 text-sm border border-purple-600 hover:bg-purple-900">
           Checkout
         </button>
       </div>
     </div>
+
     <div id="checkout-display"
-      class="bg-gray-800 p-3 text-purple-600 mt-2 rounded-xl border border-purple-600 min-w-[350px] text-center text-xl uppercase hidden">
-      "Checkout successfully" 
+      class="w-full max-w-sm bg-gray-800 p-4 text-purple-600 mt-4 rounded-xl border border-purple-600 text-center text-lg sm:text-xl uppercase hidden">
+      "Checkout successfully"
     </div>
+
+    <script src="./script.js"></script>
   </body>
-  <script src="./script.js"></script>
 </html>
